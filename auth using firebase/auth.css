@@ -3,6 +3,9 @@
     padding: 0;
 }
 
+
+/* COLOR THEMES */
+
 .primary {
     background-color: rgb(51, 207, 192);
     color: white;
@@ -16,9 +19,15 @@
     border-bottom: none;
 }
 
+
+/* END COLOR THEMES */
+
 #main-content {
     display: none;
 }
+
+
+/* STYLES FOR MODAL  */
 
 .modal {
     display: none;
@@ -30,7 +39,6 @@
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
-    /* padding-top: 60px; */
 }
 
 .modal-content {
@@ -41,6 +49,9 @@
     height: fit-content;
     animation: animatezoom 0.6s;
 }
+
+
+/* ANIMATION */
 
 @keyframes animatezoom {
     from {
@@ -117,12 +128,18 @@
     border-bottom: 1px solid rgb(51, 207, 192);
 }
 
+
+/* FOR MOBILE SCREENS */
+
 @media only screen and (max-width: 420px) {
     .modal-content {
         width: auto;
         margin: 40% auto 0 auto;
     }
 }
+
+
+/* FOR MEDIUM SIZE SCREENS */
 
 @media only screen and (min-width: 420px) and (max-width:1030px) {
     .modal-content {

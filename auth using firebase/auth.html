@@ -3,7 +3,7 @@
 <head>
     <meta charset=utf-8 />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projekt Board</title>
+    <title>AUTH USING FIREBASE</title>
 
 
     <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
@@ -18,28 +18,35 @@
 </head>
 
 <body>
+
+    <!--CDN FOR FIREBASE(make sure to use cdn from your project on firebase)-->
     <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase.js"></script>
 
     <!-- <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-storage.js"></script> -->
 
-
+    <!--customised scripts-->
     <script src="./js/AppAuth.js"></script>
 
 
 
     <button class="btn primary" onclick="SignOut()">Log Out</button>
 
+    <!--MODAL -->
+
     <div id="modallogin" class="modal">
 
         <div class="modal-content ">
+
             <span onclick="document.getElementById('modallogin').style.display='none'" class="close" title="Close Modal">&times;</span>
+
             <div class="buttons">
                 <button type="button " class="btn secondary " id="log-in-btn" onclick="togglestate(this)">Log In</button>
                 <button type="button " class="btn primary  " id="sign-up-btn" onclick="togglestate(this)">Sign Up</button>
             </div>
 
+            <!--LOGIN-->
 
             <div id="loginbox" class="box">
                 <label for="email"></label>
@@ -55,6 +62,7 @@
 
             </div>
 
+            <!--SIGN UP-->
 
             <div id="signupbox" class="box">
                 <input type="text" placeholder="Enter Name" name="name" class="input" id="name" >
