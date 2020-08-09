@@ -1,3 +1,5 @@
+/* CSS FOR ACCORDION */
+
 .accordion {
     margin-top: 2rem;
     width: 45em;
@@ -23,10 +25,12 @@
 
 .accordion-content {
     padding: 2rem;
+    color: black;
+    /* STYLES THAT SHOULDNOT BE CHANGED */
     display: none;
     overflow-y: hidden;
-    color: black;
     max-height: 0;
+    /*END OF STYLES THAT SHOULDNOT BE CHANGED */
     transition: display 0.4s ease-in-out;
     transition: max-height 0.2s ease-in-out;
 }

@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CUSTOMIZABLE STYLES LINK-->
     <link rel="stylesheet" href="./accordion.css">
     <title>Basic Accordion</title>
 </head>
@@ -11,61 +12,39 @@
 <body>
     <!---ACCORDION-->
     <div class="accordion">
+        <!--INDIVIDUAL CARDS-->
+        <!-- CARD 1 -->
         <div class="accordion-card">
-            <div class="accordion-heading" id='1' onclick="toggleacc(this)">SOYABEAN</div>
+            <!--HEADING-->
+            <div class="accordion-heading" id='1' onclick="toggleacc(this)">CARD 1</div>
+            <!-- CONTENT(THAT IS INITIALLY HIDDEN) -->
             <div class="accordion-content" id="accordionCard1">
-                <ul>
-                    <li>Full Fat Soya Grits</li>
-                    <hr>
-                    <li>Deffated Soya Grits</li>
-                    <hr>
-                    <li>Full Fat Soya Flour</li>
-                    <hr>
-                    <li>Deffated Soya Flour</li>
-                    <hr>
-                    <li>Organic Soyabean Meal</li>
-                    <hr>
-                    <li>Organic Soyabean Graded</li>
-                    <hr>
-                    <li>Soya Crude Oil</li>
-                    <hr>
-                    <li>Soya Chunks</li>
-                    <hr>
-                    <li>Soya TVP</li>
-                    <hr>
-                    <li>Soya nuggets</li>
-
-                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur natus fugiat unde nobis quos? Nobis iusto quaerat repudiandae iste alias architecto, necessitatibus blanditiis rerum voluptatem suscipit laborum sint. Totam, ipsam?</p>
             </div>
         </div>
+        <!-- CARD 2 -->
         <div class="accordion-card">
-            <div class="accordion-heading" id='2' onclick="toggleacc(this)">WHEAT</div>
+            <!--HEADING-->
+            <div class="accordion-heading" id='2' onclick="toggleacc(this)">CARD 2</div>
+            <!-- CONTENT(THAT IS INITIALLY HIDDEN) -->
             <div class=" accordion-content " id="accordionCard2 ">
-                <ul>
-                    <li>Organic Wheat Grits</li>
-                    <hr>
-                    <li>Organic Wheat Graded</li>
-                    <hr>
-                    <li>Whole Graded Wheat </li>
-
-                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur natus fugiat unde nobis quos? Nobis iusto quaerat repudiandae iste alias architecto, necessitatibus blanditiis rerum voluptatem suscipit laborum sint. Totam, ipsam?</p>
             </div>
         </div>
+        <!-- CARD 3 -->
         <div class="accordion-card ">
-            <div class="accordion-heading " id='3' onclick="toggleacc(this)">CORN</div>
+            <!--HEADING-->
+            <div class="accordion-heading " id='3' onclick="toggleacc(this)">CARD 3</div>
+            <!-- CONTENT(THAT IS INITIALLY HIDDEN) -->
             <div class="accordion-content" id="accordionCard3">
-                <ul>
-                    <li>Corn Grits</li>
-                    <hr>
-                    <li>Crack Corn</li>
-
-                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur natus fugiat unde nobis quos? Nobis iusto quaerat repudiandae iste alias architecto, necessitatibus blanditiis rerum voluptatem suscipit laborum sint. Totam, ipsam?</p>
             </div>
         </div>
 
     </div>
 
 </body>
+<!--SCRIPT FOR TOGGLING CARDS-->
 <script src="./accordion.js"></script>
 
 </html>
