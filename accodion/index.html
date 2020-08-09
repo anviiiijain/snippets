@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./accordion.css">
+    <title>Basic Accordion</title>
+</head>
+
+<body>
+    <!---ACCORDION-->
+    <div class="accordion">
+        <div class="accordion-card">
+            <div class="accordion-heading" id='1' onclick="toggleacc(this)">SOYABEAN</div>
+            <div class="accordion-content" id="accordionCard1">
+                <ul>
+                    <li>Full Fat Soya Grits</li>
+                    <hr>
+                    <li>Deffated Soya Grits</li>
+                    <hr>
+                    <li>Full Fat Soya Flour</li>
+                    <hr>
+                    <li>Deffated Soya Flour</li>
+                    <hr>
+                    <li>Organic Soyabean Meal</li>
+                    <hr>
+                    <li>Organic Soyabean Graded</li>
+                    <hr>
+                    <li>Soya Crude Oil</li>
+                    <hr>
+                    <li>Soya Chunks</li>
+                    <hr>
+                    <li>Soya TVP</li>
+                    <hr>
+                    <li>Soya nuggets</li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="accordion-card">
+            <div class="accordion-heading" id='2' onclick="toggleacc(this)">WHEAT</div>
+            <div class=" accordion-content " id="accordionCard2 ">
+                <ul>
+                    <li>Organic Wheat Grits</li>
+                    <hr>
+                    <li>Organic Wheat Graded</li>
+                    <hr>
+                    <li>Whole Graded Wheat </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="accordion-card ">
+            <div class="accordion-heading " id='3' onclick="toggleacc(this)">CORN</div>
+            <div class="accordion-content" id="accordionCard3">
+                <ul>
+                    <li>Corn Grits</li>
+                    <hr>
+                    <li>Crack Corn</li>
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script src="./accordion.js"></script>
+
+</html>

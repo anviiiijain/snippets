@@ -1,0 +1,16 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.carousel {
+    margin: 3rem;
+}
+
+.box {
+    width: 25vw;
+    height: 20vh;
+    background-color: blueviolet;
+    color: white;
+    margin: auto 1rem;
+}

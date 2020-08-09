@@ -1,0 +1,82 @@
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt Board</title>
+
+
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <!-- Material Design Theming -->
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.orange-indigo.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+
+    <link rel="stylesheet" href="./auth.css">
+
+
+</head>
+
+<body>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase.js"></script>
+
+    <!-- <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-storage.js"></script> -->
+
+
+    <script src="./js/AppAuth.js"></script>
+
+
+
+    <button class="btn primary" onclick="SignOut()">Log Out</button>
+
+    <div id="modallogin" class="modal">
+
+        <div class="modal-content ">
+            <span onclick="document.getElementById('modallogin').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <div class="buttons">
+                <button type="button " class="btn secondary " id="log-in-btn" onclick="togglestate(this)">Log In</button>
+                <button type="button " class="btn primary  " id="sign-up-btn" onclick="togglestate(this)">Sign Up</button>
+            </div>
+
+
+            <div id="loginbox" class="box">
+                <label for="email"></label>
+                <input type="email" placeholder="Enter Email" name="email" class="input" id="email-in" required>
+
+                <label for="psw"><label>
+                <input type="password" placeholder="Enter Password" name="pass" class="input" id="pass-in" required>
+                <div class="buttons-btm">
+                    <button type="submit" class="btn primary" id="log-in">Log In</button>
+                    <button class="psw btn secondary" id="pass-reset">Forgot password?</button>
+                </div>
+
+
+            </div>
+
+
+            <div id="signupbox" class="box">
+                <input type="text" placeholder="Enter Name" name="name" class="input" id="name" >
+                <label for="email"></label>
+                <input type="email" placeholder="Enter Email" name="email" class="input" id="email-up" required>
+                <label for="file" style="margin: 0 2rem;"><b>Choose Profile Image:</b></label>
+                <input type="file" class="input" onchange="chooseFile(event)">
+                <label for="psw"></label>
+                <input type="password" placeholder="Enter Password" name="pass" class="input" id="pass-up" required>
+
+                <div class="buttons-btm">
+                    <button type="button " class="btn primary " id="sign-up">Sign Up</button>
+                    <button class=" btn secondary psw" id="verify-email">Send Verification Email</button>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

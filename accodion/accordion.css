@@ -1,0 +1,40 @@
+.accordion {
+    margin-top: 2rem;
+    width: 45em;
+    box-shadow: 1px 1px 3px grey;
+}
+
+.accordion-heading {
+    margin: 0;
+    border-bottom: 1px solid;
+    padding: 1rem;
+    background-color: white;
+    color: darkslategrey;
+    font-weight: 400;
+    transition: all 0.4s ease-in-out;
+}
+
+.accordion-active,
+.accordion-heading:hover {
+    background-color: forestgreen;
+    color: white;
+    font-weight: 600;
+}
+
+.accordion-content {
+    padding: 2rem;
+    display: none;
+    overflow-y: hidden;
+    color: black;
+    max-height: 0;
+    transition: display 0.4s ease-in-out;
+    transition: max-height 0.2s ease-in-out;
+}
+
+.accordion-content ul {
+    padding: 0 1rem;
+}
+
+.accordion-content ul hr {
+    margin: 0.3rem 0;
+}
