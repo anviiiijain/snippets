@@ -146,4 +146,8 @@ nav {
   -webkit-transform: rotate(45deg) translate(-5px, -6px);
           transform: rotate(45deg) translate(-5px, -6px);
 }
+.burger2{
+   diplay:inline-block;
+   margin:10px 20px;
+}
 /*# sourceMappingURL=navbar.css.map */
